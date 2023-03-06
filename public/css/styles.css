@@ -1,0 +1,128 @@
+.btn {
+    margin: 10px;
+    min-width: 100px;
+}
+#buttons{
+    margin-top: 20px;
+}
+
+#Saludo{
+    text-align: center;
+}
+
+#Saludo div{
+    display: inline-block;
+}
+
+#results{
+    margin-left: auto;
+    /* width: 100%; */
+}
+
+fieldset label {
+    margin: 1rem 0 1rem 0.75rem;
+}
+
+fieldset div {
+    min-width: 14rem
+}
+
+fieldset > div {
+    display: inline-block;
+    max-width: 45%;
+    vertical-align: top;
+}
+
+#productForm {
+    border-right: 1px dashed;
+    border-color: gray;
+    padding-right: 15px;
+}
+
+#cartForm {
+    padding-left: 10px;
+}
+
+#cartInputs > div{
+    display: inline-block;
+    margin-left: 10px;
+    min-width: 10rem;
+}
+
+#cartInputs div:first-child {
+    display: block;
+    min-width: 10rem;
+}
+
+#cartResults, #info {
+    /* white-space: normal; */
+    word-wrap: normal;
+    word-break: break-all;
+}
+
+#productRolSelection div, #cartRolSelection div{
+    display: inline-block;
+}
+
+#productRolSelection label, #cartRolSelection label{
+    margin: 0;
+}
+
+#productRolSelection input, #cartRolSelection input{
+    margin: 0 1rem 0 1rem;
+}
+
+.errorLabel{
+    color: red;
+}
+
+.errorInput{
+    border-color: red !important;
+}
+
+img {
+    min-width: 8rem;
+    min-height: 8rem;
+    max-width: 10rem;
+    max-height: 10rem;
+}
+
+td {
+    /* text-align: center; */
+    vertical-align: middle;
+    max-width: 10rem;
+}
+
+#server {
+    display: inline;
+    width: 50%
+}
+
+#chat input{
+    display: inline;
+    width: 50%;
+    margin: 10px 0px 10px 0px;
+}
+
+#chat label{
+    min-width: 4rem;
+}
+
+#server span {
+    display: inline;
+    width: 2.5rem;
+}
+
+#server input {
+    width: 30%;
+}
+
+#msj {
+    border-style: solid;
+    border-width: 1px;
+    border-color: green;
+    /* border-radius: 10%; */
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 1rem;
+    background-color: lightskyblue;
+}

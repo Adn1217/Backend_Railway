@@ -1,0 +1,46 @@
+<h2>Zona de Mensajes</h2>
+<div class="col-md-6">
+    <label for="id" class="form-label">Id</label>
+    <input type="text" class="form-control" id="userIdInput" placeholder="Ingrese Id">
+</div>
+<div class="col-md-6">
+    <label for="user" class="form-label">Usuario</label>
+    <input type="text" class="form-control" id="userInput" placeholder="Ingrese Nombre">
+    <!-- <div class="user mb-3">
+        <label for="title" class="form-label">Correo</label>
+        <input type="text" class="form-control" id="userInput" placeholder="Ingrese correo">
+        <div id="server">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Dominio" aria-label="Server">
+        </div>
+    </div> -->
+</div>
+<div class="col-md-6">
+    <label for="lastname" class="form-label">Apellido</label>
+    <input type="text" class="form-control" id="userLastnameInput" placeholder="Ingrese Apellido">
+</div>
+<div class="col-md-3">
+    <label for="age" class="form-label">Edad</label>
+    <input type="number" min="0" max="99" class="form-control" id="userAgeInput" placeholder="Edad">
+</div>
+<div class="col-md-6">
+    <label for="alias" class="form-label">Alias</label>
+    <input type="text" class="form-control" id="userAliasInput" placeholder="Ingrese Alias">
+</div>
+<div class="col-md-6">
+    <label for="avatar" class="form-label">Avatar</label>
+    <input type="text" class="form-control" id="userAvatarInput" placeholder="Ingrese Avatar URL">
+</div>
+<div class="col-md-8">
+    <label for="msj" class="form-label">Mensaje</label>
+    <input type="text" class="form-control" id="msgInput" placeholder="Ingrese Mensaje">
+</div>
+<div>
+    <!-- <button id="addMsgButton" type="button" class="btn btn-primary" >Agregar</button> -->
+    <button id="sendNormMsgButton" type="button" class="btn btn-primary" >EnviarNormalizado</button>
+    <button id="sendMsgButton" type="button" class="btn btn-primary" >Enviar</button>
+</div>
+<hr>
+<div id="msjs" class="col-md-5">
+    <%- include('./chat.ejs') %>
+</div>

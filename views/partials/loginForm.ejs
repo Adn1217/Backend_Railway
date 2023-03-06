@@ -1,0 +1,66 @@
+<h1>Login de usuario</h1>
+<div class="col-md-6">
+    <label for="userLogin" class="form-label">Usuario</label>
+    <input type="text" class="form-control" id="loginUserInput" placeholder="Ingrese usuario">
+</div>
+<div class="col-md-6">
+    <label for="userPswLogin" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="loginPwdInput" placeholder="Ingrese usuario">
+</div>
+<div>
+    <button id="loginButton" type="button" class="btn btn-primary" >Login</button>
+</div>
+<div id="errors">
+</div>
+<hr>
+<div>
+    <button id="goToRegisterButton" type="button" class="btn btn-warning" >ir al Registro</button>
+</div>
+<script>
+    let port='';
+    if (port){
+        port =`:${port}`
+    }
+    const server ='backendrailway.up.railway.app';
+    const uri = `https://${server}${port}`;
+    async function login(user, pwd){
+        if (user !== ''){
+            errors.classList.remove('errorLabel');
+            loginUserInput.classList.remove('errorInput');
+            let response = await fetch(`${uri}/login`, { method: 'POST',
+                headers: {
+                    Accept: "application/json",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ 
+                    username: user,
+                    password: pwd,
+                })
+            });
+            let resp = await response.json();
+            console.log(resp);
+            if(response.status === 200){
+                location.href=`${uri}/home`;
+            }else{
+                errors.classList.add('errorLabel');
+                loginUserInput.classList.add('errorInput');
+                loginPwdInput.classList.add('errorInput');
+                errors.innerHTML = resp.status;
+                setTimeout( () => {
+                    location.href=`${uri}/faillog`;
+                }
+                , 2000)
+            }
+        }else{
+            errors.classList.add('errorLabel');
+            loginUserInput.classList.add('errorInput');
+            loginPwdInput.classList.add('errorInput');
+            errors.innerHTML = 'Los campos resaltados son obligatorios';
+        }
+    }
+    function goToRegister(){
+        location.href=`${uri}/register`;
+    }
+    loginButton.addEventListener('click', () => login(loginUserInput.value, loginPwdInput.value));
+    goToRegisterButton.addEventListener('click', () => goToRegister());
+</script>

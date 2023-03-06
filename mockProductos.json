@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Escuadra",
+    "code": "prd5542",
+    "description": "Este producto es ideal para el dibujo técnico",
+    "price": 123.5,
+    "stock": 500,
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/ecommerce-28be7.appspot.com/o/escuadra.webp?alt=media&token=39e18415-870e-4814-85b3-72e7f6e625f9",
+    "id": 1,
+    "timestamp": "04/12/2022, 20:31:08"
+  },
+  {
+    "title": "Calculadora",
+    "code": "prd5543",
+    "description": "Este producto facilita la matemática",
+    "price": 234.56,
+    "stock": 2500,
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/ecommerce-28be7.appspot.com/o/calculadora.webp?alt=media&token=f8ab5e98-80f8-408b-8e00-ba81d36e5356",
+    "id": 2,
+    "timestamp": "4/12/2022, 19:21:38"
+  },
+  {
+    "title": "Globo Terraqueo",
+    "code": "prd5544",
+    "description": "Este producto permite conocer la geografía mundial",
+    "price": 345.67,
+    "stock": 50,
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/ecommerce-28be7.appspot.com/o/globoTerraqueo.webp?alt=media&token=b1c23fc2-85e5-4174-a647-ac3d7262fbd9",
+    "id": 3,
+    "timestamp": "04/12/2022, 19:23:17"
+  },
+  {
+    "code": "Prd0689",
+    "title": "Cojín",
+    "description": "Un cojín delicioso. Pruebalo.",
+    "price": "50000",
+    "stock": "15",
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/ecommerce-28be7.appspot.com/o/cojin.png?alt=media&token=83b0b601-2013-40e2-bbbc-b45a76c5d96f",
+    "id": 4,
+    "timestamp": "04/12/2022, 20:20:21"
+  }
+]

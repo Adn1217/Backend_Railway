@@ -1,0 +1,82 @@
+[
+  {
+    "usuario": "Alejandra Fernández",
+    "productos": [
+      {
+        "title": "Escuadra",
+        "code": "prd5542",
+        "description": "Este producto es ideal para el dibujo técnico",
+        "price": 123.5,
+        "stock": 500,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_955707-MCO44495623436_012021-F.webp",
+        "id": 1
+      },
+      {
+        "title": "Calculadora",
+        "code": "prd5543",
+        "description": "Este producto facilita la matemática",
+        "price": 234.56,
+        "stock": 2500,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_771821-MCO52197432698_102022-F.webp",
+        "id": 2
+      }
+    ],
+    "id": 1,
+    "timestamp": "30/11/2022, 23:21:28"
+  },
+  {
+    "usuario": "Adrian Fernández",
+    "productos": [
+      {
+        "title": "Escuadra",
+        "code": "prd5542",
+        "description": "Este producto es ideal para el dibujo técnico",
+        "price": 123.5,
+        "stock": 500,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_955707-MCO44495623436_012021-F.webp",
+        "id": 1
+      },
+      {
+        "title": "Globo Terraqueo",
+        "code": "prd5544",
+        "description": "Este producto permite conocer la geografía mundial",
+        "price": 345.67,
+        "stock": 50,
+        "thumbnail": "https://panamericana.vteximg.com.br/arquivos/ids/190161-1600-1600/globo-terraqueo-politico-40-cm-1-7701016736787.jpg?v=636251722565900000",
+        "id": 3
+      }
+    ],
+    "id": 2,
+    "timestamp": "30/11/2022, 23:11:03"
+  },
+  {
+    "usuario": "Estefano Pelinga",
+    "productos": [],
+    "id": 3,
+    "timestamp": "10/12/2022, 19:48:21"
+  },
+  {
+    "usuario": "Adn",
+    "productos": [],
+    "id": 4,
+    "timestamp": "15/01/2023, 19:19:55"
+  },
+  {
+    "usuario": "Alejandra",
+    "productos": [],
+    "id": 5,
+    "timestamp": "22/01/2023, 14:06:45"
+  },
+  {
+    "usuario": "Alu",
+    "productos": [],
+    "id": 6,
+    "timestamp": "22/01/2023, 14:22:27"
+  },
+  {
+    "usuario": "Adrianf",
+    "productos": [],
+    "id": 7,
+    "timestamp": "01/02/2023, 21:03:58"
+  }
+]

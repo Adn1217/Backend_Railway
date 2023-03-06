@@ -1,0 +1,18 @@
+<h1><%=error%></h1>
+<hr>
+<div>
+    <button id="goToRegisterButton" type="button" class="btn btn-warning" >ir al Login</button>
+</div>
+<script>
+
+    let port='';
+    if (port){
+        port =`:${port}`
+    }
+    const server ='backendrailway.up.railway.app';
+    const uri = `https://${server}${port}`;
+    function goToLogin(){
+        location.href = `${uri}/login`
+    }
+    goToRegisterButton.addEventListener('click', () => goToLogin());
+</script>

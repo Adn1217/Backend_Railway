@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Escuadra",
+    "code": "prd5542",
+    "description": "Este producto es ideal para el dibujo técnico",
+    "price": 123.5,
+    "stock": 500,
+    "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_955707-MCO44495623436_012021-F.webp",
+    "id": 1,
+    "timestamp": "04/12/2022, 20:31:08"
+  },
+  {
+    "title": "Calculadora",
+    "code": "prd5543",
+    "description": "Este producto facilita la matemática",
+    "price": 234.56,
+    "stock": 2500,
+    "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_771821-MCO52197432698_102022-F.webp",
+    "id": 2,
+    "timestamp": "4/12/2022, 19:21:38"
+  },
+  {
+    "title": "Globo Terraqueo",
+    "code": "prd5544",
+    "description": "Este producto permite conocer la geografía mundial",
+    "price": 345.67,
+    "stock": 50,
+    "thumbnail": "https://panamericana.vteximg.com.br/arquivos/ids/190161-1600-1600/globo-terraqueo-politico-40-cm-1-7701016736787.jpg?v=636251722565900000",
+    "id": 3,
+    "timestamp": "04/12/2022, 19:23:17"
+  },
+  {
+    "code": "Hola",
+    "title": "Hola",
+    "description": "Hola",
+    "price": "111",
+    "stock": "111",
+    "thumbnail": "urlHola",
+    "id": 4,
+    "timestamp": "15/01/2023, 19:04:21"
+  },
+  {
+    "code": "11",
+    "title": "11",
+    "description": "11",
+    "price": "11",
+    "stock": "11",
+    "thumbnail": "11",
+    "id": 5,
+    "timestamp": "22/01/2023, 13:16:04"
+  },
+  {
+    "code": "11",
+    "title": "11",
+    "description": "11",
+    "price": "11",
+    "stock": "11",
+    "thumbnail": "11",
+    "id": 6,
+    "timestamp": "22/01/2023, 13:17:09"
+  }
+]

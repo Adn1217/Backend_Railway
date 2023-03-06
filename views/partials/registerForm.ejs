@@ -1,0 +1,71 @@
+<h1>Registro de usuario</h1>
+<div class="col-md-6">
+    <label for="userRegister" class="form-label">Usuario</label>
+    <input type="text" class="form-control" id="registerUserInput" placeholder="Ingrese usuario">
+</div>
+<div class="col-md-6">
+    <label for="pwdRegister" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="registerPwdInput" placeholder="Ingrese usuario">
+</div>
+<div>
+    <button id="registerButton" type="button" class="btn btn-primary" >Registrar</button>
+</div>
+<div id="registerErrors">
+</div>
+<hr>
+<div>
+    <button id="goToLoginButton" type="button" class="btn btn-warning" >ir al Login</button>
+</div>
+<script>
+    let port='';
+    if (port){
+        port =`:${port}`
+    }
+    const server ='backendrailway.up.railway.app';
+    const uri = `https://${server}${port}`;
+    async function register(user, pwd){
+        if (registerUserInput.value !== '' && registerPwdInput.value !== '' ){
+            registerErrors.classList.remove('errorLabel');
+            registerUserInput.classList.remove('errorInput');
+            registerPwdInput.classList.remove('errorInput');
+            let response = await fetch(`${uri}/register`, { method: 'POST',
+                headers: {
+                    Accept: "application/json",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    username: user,
+                    password: pwd
+                })
+            });
+            let resp = await response.json();
+            console.log(resp);
+            if(response.status === 200){
+                registerErrors.innerHTML = 'Usuario registrado, será redirigido..';
+                setTimeout( () => {
+                    location.href=`${uri}/login`;
+                }
+                , 2000)
+            }else{
+                registerErrors.classList.add('errorLabel');
+                registerUserInput.classList.add('errorInput');
+                registerErrors.innerHTML = resp.status;
+                setTimeout( () => {
+                    location.href=`${uri}/failreg`;
+                }
+                , 2000)
+            }
+        }else{
+            registerErrors.classList.add('errorLabel');
+            registerUserInput.classList.add('errorInput');
+            registerPwdInput.classList.add('errorInput');
+            registerErrors.innerHTML = 'Los campos resaltados son obligatorios';
+        }
+    }
+    
+    function goToLogin(){
+        location.href = `${uri}/login`
+    }
+    registerButton.addEventListener('click', () => register(registerUserInput.value, registerPwdInput.value));
+    goToLoginButton.addEventListener('click', () => goToLogin());
+</script>

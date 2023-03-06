@@ -1,0 +1,26 @@
+<% if (!("error" in products)) {%>
+    <table class="table">
+        <thead>
+            <th>Id</th>
+            <th>Código</th>
+            <th>Producto</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Imagen</th>
+        </thead>
+        <tbody>
+        <% for(let i=0; i<products.length; i++){ %>
+            <tr>
+                <td><%=products[i].id || products[i]._id%></td>
+                <td><%=products[i].code%></td>
+                <td><%=products[i].title%></td>
+                <td><%=products[i].description%></td>
+                <td>$<%=products[i].price%></td>
+                <td><%=products[i].stock%></td>
+                <td><img src="<%=products[i].thumbnail%>" alt="Imagen de producto <%=products[i].id%>"></td>
+            </tr>
+        <% } %>
+        </tbody>
+    </table>
+<% } %>

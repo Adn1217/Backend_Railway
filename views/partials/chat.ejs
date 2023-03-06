@@ -1,0 +1,7 @@
+<% if (!("error" in msgs)) {%>
+    <% for(let i=0; i<msgs.length; i++){ %>
+        <div id="msj" class="rounded-3 text-break">
+            <p><strong><%=msgs[i].usuario%>:</strong><br><%=msgs[i].mensaje%><br><em>Recibido el <%=msgs[i].fecha%></em></p>
+        </div>
+    <% } %>
+<% } %>

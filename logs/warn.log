@@ -1,0 +1,5 @@
+{
+  message: 'Se ingresa puerto inválido. Se toma puerto 8080 por defecto.',
+  level: 'warn',
+  timestamp: '2023-02-15T00:13:05.749Z'
+}

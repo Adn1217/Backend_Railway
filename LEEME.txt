@@ -1,0 +1,18 @@
+Se debe instalar NGINX y estarse ejecutando.
+
+Se deben desplegar a través de PM2 o cualquier otra libreria, los servidores en los puertos especificados. A través de los siguientes comandos de PM2 o equivalentes:
+
+pm2 start server.js --name=servidor1 -- --port 8080 
+pm2 start server.js --name=servidorRandom --watch -i 3 -- --port 8081
+pm2 start server.js --name=servidor2 -- --port 8082
+pm2 start server.js --name=servidor3 -- --port 8083
+pm2 start server.js --name=servidor4 -- --port 8084
+pm2 start server.js --name=servidor5 -- --port 8085
+
+Parámetros por defecto (en caso de no ingresarse):
+
+    port: 8080
+    mode: fork
+
+NOTA: El parametro watch de PM2, al reiniciar el servidor cada vez que hay un cambio, detiene el socket generando un error. Lo mismo sucede con Nodemon.
+La funcionalidad puede probarse a través de las rutas http://localhost/info (informacion del proceso) y http://localhost/randoms/?cant=20 (conteo aleatorio), las cuales se renderizan en el back.
